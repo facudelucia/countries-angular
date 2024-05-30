@@ -1,0 +1,13 @@
+<h2>Country</h2>
+<hr>
+<div class="row">
+    <div class="col">
+        <shared-search-box [initialValue]="initialValue" (onDebounce)="onValue($event)" (onValue)="onValue($event)" placeholder=""></shared-search-box>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <hr>
+        <countries-table [countries]="countries"></countries-table>
+    </div>
+</div>

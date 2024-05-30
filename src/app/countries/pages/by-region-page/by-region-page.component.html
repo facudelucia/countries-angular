@@ -1,0 +1,20 @@
+<h2>Region</h2>
+<hr>
+<div class="row">
+    <div class="col text-center">
+        <button
+            *ngFor="let region of regions"
+            [ngClass]="{'btn-outline-primary': selectedRegion === region}"
+            class="btn mx-2"
+            (click)="onValue(region)"
+        >
+            {{region}}
+        </button>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <hr>
+        <countries-table [countries]="countries"></countries-table>
+    </div>
+</div>
